@@ -1,0 +1,11 @@
+.row{
+    background-color: #a1b5cb;
+}
+
+.row div {
+    margin-top: 15px;
+}
+
+.row h1{
+    padding-left: 30px;
+}

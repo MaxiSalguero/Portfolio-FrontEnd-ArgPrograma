@@ -1,0 +1,19 @@
+<div class="row">
+    <h1>Experiencias</h1>
+    <div class="col-lg-2 mt-4" >
+        <div *ngFor="let exp of experiencia">
+            <img [src]="exp.url_imagen" class="imagen">
+        </div>
+    </div>
+
+    <div class="col-lg-10">
+        <ul *ngFor="let exp of experiencia">
+           <li>
+                <h2>{{exp.experiencia}}</h2>
+                <h3>({{exp.fecha_inicio}}{{exp.fecha_fin}})</h3>
+           </li>   
+           <p class="parrafos"> {{exp.compania}} </p> 
+           <p class="parrafos"> {{exp.localidad}} </p>
+        </ul> 
+    </div>
+</div>

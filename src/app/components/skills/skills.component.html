@@ -1,0 +1,21 @@
+<div class="row">
+    <h1>Hard & Soft Skills</h1>
+        <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skills of skill">
+            <circle-progress
+                [percent] = "(skills.porcentaje)"
+                [radius]="100"
+                [showUnits]="false"
+                [showSubtitle]="false"
+                [imageSrc]="(skills.img)"
+                [imageHeight]= "105"
+                [imageWidth]= "105"
+                [showImage]= true
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#78C000'"
+                [innerStrokeColor]="'#C7E596'"
+                [animation]="true"
+                [animationDuration]="600">
+            </circle-progress>
+        </div>
+</div>

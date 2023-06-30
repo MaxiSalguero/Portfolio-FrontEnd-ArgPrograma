@@ -1,0 +1,17 @@
+<div class="row">
+    <h1>Educacion</h1>
+    <div class="col-lg-2 mt-4" >
+        <div *ngFor="let edu of educacion">
+            <img [src]="edu.url_imagen" class="imagen">
+        </div>
+    </div>
+    <div class="col-lg-10">
+        <ul *ngFor="let edu of educacion">
+           <li>
+                <h2>{{edu.titulo}}</h2>
+                <h3>({{edu.fecha_inicio}}{{edu.fecha_fin}})</h3>
+           </li>   
+           <p class="parrafo">{{edu.institucion}}</p>
+        </ul> 
+    </div>
+</div>
